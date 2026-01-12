@@ -1,0 +1,33 @@
+---
+layout: default
+title: Inicio
+---
+
+<section class="intro">
+    <h1>Rebalanceador de Estrategias</h1>
+    <p>Documentando mi TFM: un sistema de rebalanceo de estrategias de inversión basado en el régimen económico, utilizando Machine Learning y Deep Learning.</p>
+</section>
+
+<section class="posts">
+    <h2>Entradas recientes</h2>
+    <ul class="post-list">
+        {% for post in site.posts %}
+        <li class="post-list-item">
+            <h3 class="post-list-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h3>
+            <div class="post-list-meta">
+                <time datetime="{{ post.date | date_to_xmlschema }}">
+                    {{ post.date | date: "%d de %B, %Y" }}
+                </time>
+                {% if post.categories %}
+                | {{ post.categories | join: ", " }}
+                {% endif %}
+            </div>
+            {% if post.excerpt %}
+            <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</section>

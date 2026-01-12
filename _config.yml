@@ -1,0 +1,38 @@
+# Configuración del Blog
+title: "Rebalanceador de Estrategias | TFM"
+description: "Documentando mi TFM: un rebalanceador de estrategias basado en régimen económico usando ML y Deep Learning"
+author: "Sergio"
+url: "" # Tu URL de GitHub Pages: https://tuusuario.github.io
+baseurl: "/blog" # Nombre del repositorio
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Kramdown settings (para código)
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Excluir archivos
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Colecciones y permalinks
+permalink: /:year/:month/:day/:title/
+
+# Variables personalizadas
+social:
+  github: # tu usuario de github
+  linkedin: # tu perfil de linkedin
+  email: # tu email
