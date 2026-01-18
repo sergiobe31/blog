@@ -6,7 +6,6 @@ permalink: /about/
 
 ## Quién soy
 
-[Escribe aquí una breve presentación sobre ti]
 
 Actualmente estoy cursando un Máster en [nombre del máster] en la Universidad Politécnica de Madrid, donde estoy desarrollando mi Trabajo Fin de Máster sobre **rebalanceo de estrategias de inversión basado en régimen económico**.
 
