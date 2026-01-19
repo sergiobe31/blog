@@ -27,6 +27,7 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - projects/
 
 # Colecciones y permalinks
 permalink: /:year/:month/:day/:title/
